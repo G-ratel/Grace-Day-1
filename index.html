@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">G-RATEL Clothing Market Survey</h1>
+    <p id="description">
+      Hey there; Thanks for taking a couple of minutes to fill in my survey!
+    </p>
+    <img src="img/elegant.jpg" alt="Survey logo"/>
+  </header>
+  <main class="main-survey">
+    <form id="survey-form">
+      <div class='form-item'>
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+      </div>
+      <div class='form-item'>
+        <label for="email" id="email-label">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+      </div>
+      <div class='form-item'>
+        <label for="number" id="number-label">Age (Optional)</label>
+        <input type="number" id="number" name="number" placeholder="Your age" min="0" max="120"/>
+      </div>
+      <div class='form-item'>
+        <label for="dropdown" id="dropdown-label">Describe Your Current Role</label>
+        <select id="dropdown" name="dropdown" required>
+          <option disabled default value>Select Your Role</option>
+          <option value="student">Student</option>
+          <option value="fullEmp">Fulltime Employment</option>
+          <option value="partEmp">Parttime Employment</option>
+          <option value="learner">Entrepreneur</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="preferNo">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div class='form-item checkboxes'>    
+        <p>How often do you buy clothing?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Once a week
+          <input type="radio" name="user-recommend" value="Unlikely"/>Once a forthnight
+          <input type="radio" name="user-recommend" value="Maybe"/>Once a month
+          <input type="radio" name="user-recommend" value="Likely"/>A few times in month
+          <input type="radio" name="user-recommend" value="Definitely"/>Hardly ever
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>How much, on average, do you spend on a garment?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Up to $20
+          <input type="radio" name="user-recommend" value="Unlikely"/>Up to $50
+          <input type="radio" name="user-recommend" value="Maybe"/>Up to $75
+          <input type="radio" name="user-recommend" value="Likely"/>Up to $100
+          <input type="radio" name="user-recommend" value="Definitely"/>Price is of no concern if i fall in love with it
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>How important is price?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Extremely
+          <input type="radio" name="user-recommend" value="Unlikely"/>Very
+          <input type="radio" name="user-recommend" value="Maybe"/>So so
+          <input type="radio" name="user-recommend" value="Likely"/>Not so
+          <input type="radio" name="user-recommend" value="Definitely"/>I don't care
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>How do you feel about online shopping?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Yay
+          <input type="radio" name="user-recommend" value="Unlikely"/>Nay
+          <input type="radio" name="user-recommend" value="Maybe"/>Never tried it
+          <input type="radio" name="user-recommend" value="Likely"/>Worried about credit card fraud
+          <input type="radio" name="user-recommend" value="Definitely"/>Other
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>Do you prefer to shop around or would rather a one-stop-location for all your clothing?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Shop around(different brands)
+          <input type="radio" name="user-recommend" value="Unlikely"/>Shop around(price driven)
+          <input type="radio" name="user-recommend" value="Maybe"/>One-stop-location(brand loyalty)
+          <input type="radio" name="user-recommend" value="Likely"/>One-stop-location(convenience/service)
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>Where do you like to shop? (Select all that apply)</p>
+        <label class="filin">
+          <input type="checkbox" name="user-used" value="Unlikely"/>Local shopping centres
+          <input type="checkbox" name="user-used" value="Unlikely"/>Malls
+          <input type="checkbox" name="user-used" value="Unlikely"/>Shopping strips
+          <input type="checkbox" name="user-used" value="Unlikely"/>Boutiques
+          <input type="checkbox" name="user-used" value="Unlikely"/>Online(Instagram)
+          <input type="checkbox" name="user-used" value="Unlikely"/>Online(Website)
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>How highly do you rate customer service in your decision to shop somewhere?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Very - or i won't shop there
+          <input type="radio" name="user-recommend" value="Unlikely"/>So so, it can definitely influence my future purchases
+          <input type="radio" name="user-recommend" value="Maybe"/>I don't care: I buy for the product or the price alone.
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>Would you be more inclined to buy something if it was Nigerian Made or by a Nigerian Designer?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Yes
+          <input type="radio" name="user-recommend" value="Unlikely"/>No
+          <input type="radio" name="user-recommend" value="Maybe"/>Not if it costs more
+          <input type="radio" name="user-recommend" value="Likely"/>Other
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>Do you find it hard to find clothes and undergarments that fit?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>No, I am a standard body size and it's not an issue
+          <input type="radio" name="user-recommend" value="Unlikely"/>Yes, I have a non-standard body size
+          <input type="radio" name="user-recommend" value="Maybe"/>Yes, I am plus-sized but in proportion
+          <input type="radio" name="user-recommend" value="Likely"/>Yes, I am plus-sized of a non-standard shape
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>Do you think that there needs to be more Fashion Forwardness with plus-sized clothing stores?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>No, fashion is only for certain people
+          <input type="radio" name="user-recommend" value="Unlikely"/>No. I think there's enough variety
+          <input type="radio" name="user-recommend" value="Maybe"/>Indifferent
+          <input type="radio" name="user-recommend" value="Likely"/>Absolutely! Just because you are larger doesn't mean you aren't fashionable!
+          <input type="radio" name="user-recommend" value="Definitely"/>Absolutely! Our body shapes are changing, its time to accomodate for that
+        </label>
+      </div>
+      <div class='form-item checkboxes'>    
+        <p>So they have sold out of your size!! Would you wait for something to be ordered in?</p>
+        <label class="filin">
+          <input type="radio" name="user-recommend" value="NotAtAll"/>Yes, because I really want it
+          <input type="radio" name="user-recommend" value="Unlikely"/>No, I can't be bothered coming back
+          <input type="radio" name="user-recommend" value="Maybe"/>No, I wanted it now. It was an impulse.
+        </label>
+      </div>
+      <div class='form-item checkboxes'>
+        <p>Would you participate in events by a retailer or fashion label? (Select all that apply)</p>
+        <label class="filin">
+          <input type="checkbox" name="user-used" value="frontend"/>Free Fashion Shows
+          <input type="checkbox" name="user-used" value="backend"/>Styling sessions(1-2 hours)
+          <input type="checkbox" name="user-used" value="dataVisual"/>Body image workshops
+          <input type="checkbox" name="user-used" value="openSourceProjects"/>Weekly E-mails
+          <input type="checkbox" name="user-used" value="challenges"/>Fashion registry
+          <input type="checkbox" name="user-used" value="forums"/>Social media(Facebook/Instagram/Twitter)
+          <input type="checkbox" name="user-used" value="wiki"/>Catalogues/Magazines
+          <input type="checkbox" name="user-used" value="videos"/>Collection launch
+        </label>
+      </div>
+      <div class='form-item'>
+        <label for="additional-comments">
+          What do you love about your favourite brand or shop?
+        </label>
+        <textarea id="additional-comments" name="additional-comments" placeholder="Type here..."></textarea>
+      </div>
+      <div class='form-item'>
+        <label for="additional-comments">
+          What do you think is lacking the most in fashion retailers today?
+        </label>
+        <textarea id="additional-comments" name="additional-comments" placeholder="Type here..."></textarea>
+      </div>
+      <div class='form-item'>
+        <label for="additional-comments">
+          Any questions or feedback or suggestions you'd like to leave for this survey?
+        </label>
+        <textarea id="additional-comments" name="additional-comments" placeholder="Type here..."></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+  <footer class="text-center">
+    <a href="https://www.facebook.com" target="blank">
+      <img src="img/facebook like.png" title="Facebook" height="50" width="50">
+    </a>
+    <a href="https://www.twitter.com" target="blank">
+        <img src="img/twitter.png" title="twitter" height="50" width="50">
+    </a>
+    <a href="https://www.instagram.com" target="blank">
+        <img src="img/instagram.png" title="instagram" height="50" width="50">
+    </a>
+    <p>2020 G-RATEL Clothing Market Survey. Developed by Founder, Grace Ajiboye.</p>
+  </footer>
+</body>
